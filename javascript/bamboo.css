@@ -1,0 +1,67 @@
+	.layer_Blank{position: fixed;top: 0;left: 80px;z-index: 100;background-color: rgba(0, 0, 0, .50);width: 100%;height: 100%;display:none;}
+	.layer_Blank2{position: fixed;top: 0;left: 0;z-index: 99;background-color: rgba(0, 0, 0, .50);width: 80px;height: 100%;display:none;}
+	.layer_Blank3{position: fixed;top: 50px;left: 0;z-index: 99;background-color: rgba(0, 0, 0, .50);width: 100%;height: 100%;display:none;}
+	.section_menu{position: fixed;z-index: 300;top: 0;bottom: 0;left: -200px;background-color: #292b30;}
+
+	#console { background-color: #333; color: #fff; padding: 2px 5px; font-size: 11px; position: fixed; bottom: 0; right: 0; z-index: 1000 }
+
+	/*	Bamboo
+	=========================== */
+	.overflow { overflow: hidden; -webkit-overflow-scrolling: touch; position:relative;}
+	.loading { background-image: url(../images/loader.gif); background-position: center; background-repeat: no-repeat; background-size: 32px; }
+	.loading.subview { min-height: 300px; }
+	#container { margin: 0; position: relative; z-index: 2;}
+	#cover { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255,255,255,0); z-index: 600; }
+
+	/*	Header
+	=========================== */
+	.main_header{display:block;height:50px;}
+	header.primary { height: 50px; color: #333; background-color: #f9f9f9; z-index:6000; position: fixed; width:100%;top: 0; border-bottom:3px solid #bdbdbd}
+	header.primary .icon { z-index: 22; position: absolute; top: 0; left: 0; height: 49px; width: 49px; font-size: 40px; line-height: 49px; text-align: center; color: #333; 
+							cursor:pointer;background-image:url(/images/menu.png);background-size:35px; background-repeat:no-repeat;background-position: 10px 8px}
+	header.primary .search { z-index: 22; position: absolute; top: 0; right: 0; height: 49px; width: 49px; font-size: 40px; line-height: 49px; text-align: center; color: #333; 
+                            cursor:pointer;background-image:url(/images/search.png);background-size:25px; background-repeat:no-repeat;background-position: 15px 12px}
+	header.primary .side { left: auto; right: 0; }
+	header.primary hgroup { text-align: center }
+	header.primary hgroup h1 { z-index: 20; position: absolute; top: 0; left: 50px; right: 50px; color:#333; margin: 0; line-height: 49px; margin: 0; font-size: 20px; }
+	
+	.primary .primaryMain{z-index:50;}
+	.primary .formSearch{position: relative;z-index:53; top:-100px; left:0; background-color:white;height:49px; padding:0px 30px 0px 48px;}
+
+	
+	/*	Navigation
+	=========================== */
+	.navigation { background: #232323; color: #cbc4c5; z-index: 1; width: 200px; top: 0; right: 0; bottom: 0; left: 0;}
+	.navigation ul { list-style: none; padding: 0; margin: 0; width: 200px; position: relative; }
+	.navigation li { font-size: 18px; position: relative; font-weight: 100; border-bottom: solid 1px rgba(0,0,0,0.1); border-top: solid 1px rgba(255,255,255,0.05); }
+		.navigation ul li a ,
+		.navigation ul li a:hover ,
+		.navigation ul li a:visited ,
+		.navigation ul li a:focus { text-decoration: none; color: #cbc4c5; background-color: transparent; display: block; padding: 4px 14px 4px 14px; line-height: 40px }
+
+	/*	Presentation styles
+	=========================== */
+	#content { padding: 0px; }
+
+@media only screen and (min-width: 1024px) {
+	.primarySearch{max-width:1024px;}
+	 header.primary .search{left:0px;}
+	.main_header{display:block;height:auto;}
+	.section_menu{left: 0; transform: none;}
+	.layer_Blank{display:none;}
+	.overflow { overflow: hidden; -webkit-overflow-scrolling: touch; }	
+	/*	Bamboo
+	=========================== */
+	#container {width: 100%; -webkit-overflow-scrolling: touch;}
+
+	/*	Header
+	=========================== */
+	header.primary { background: transparent; border: none; position:relative;border-bottom:3px solid #bdbdbd}
+	header.primary .icon { display: none }
+	header.primary hgroup { text-align: left; padding: 15px 15px 15px 15px }
+	header.primary hgroup h1 { position: relative; left: 0; right: auto; font-size: 30px; line-height: 34px; }
+
+	/*	Navigation
+	=========================== */
+	.navigation { max-width: 200px }
+	}
